@@ -1,0 +1,4 @@
+- name: Demo Playbook
+  hosts: all
+  roles:
+    - common
