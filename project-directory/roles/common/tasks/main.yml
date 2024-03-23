@@ -8,4 +8,4 @@
     name: httpd
     enabled: true
     state: started
-  #notify: restart apache
+  notify: restart apache
