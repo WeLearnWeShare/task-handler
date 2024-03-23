@@ -1,4 +1,5 @@
 - name: Demo Playbook
   hosts: all
+  become: true
   roles:
     - common
