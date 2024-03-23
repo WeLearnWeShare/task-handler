@@ -1,0 +1,11 @@
+- name: Ensure Apache is installed
+  ansible.builtin.yum:
+    name: httpd
+    state: present
+
+- name: Ensure Apache service is enabled and running
+  ansible.builtin.service:
+    name: httpd
+    enabled: true
+    state: started
+  #notify: restart apache
